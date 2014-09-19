@@ -1,0 +1,16 @@
+#make nice statusbar :)
+altscreen on
+hardstatus alwayslastline
+hardstatus string '%{= kg}[ %{G}%H %{g}][%= %{= kw}%?%-Lw%?%{=b kR}(%{W}%n*%f %t%?(%u)%?%{=b kR})%{= kw}%?%+Lw%?%?%= %{g}][%{Y}%l%{g}]%{=b C}[ %d %M %c ]%{W}'
+
+# Programs
+screen -t diverse           0
+screen -t irssi             1   irssi
+screen -t dev               2
+screen -t "deluge-console"  3   deluge-console
+
+# Bell
+vbell off
+
+# Scrolling with PgUp and PgDown
+bindkey "[5~" eval "copy" "stuff ^b" "echo 'Copy mode entered. Press [Esc] to abort.'"
