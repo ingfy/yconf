@@ -52,7 +52,7 @@ let g:solarized_termtrans=1
 colorscheme solarized
 set background=dark
 set backspace=indent,eol,start
-set ts=2 shiftwidth=2 expandtab
+set ts=4 shiftwidth=4 expandtab
 au BufNewFile,BufRead *.java setf java
 map <ESC>[1;5C e
 map <ESC>[1;5D ge
